@@ -7,21 +7,21 @@
     <title>Poemas e Energia, Conto e Poesia</title>
 <style>
 body {
-    /* Remove margens padrão do navegador */
     padding: 0;
     margin: 0 auto;
     text-align: center;
 }
 
+/* Corrigido: padding-right e margin: 0 auto */
 .box pre, h1 {
     font-family: 'Mali', sans-serif;
     padding-left: 20px;
-    padding-rigth: 20px;
+    padding-right: 20px; /* Corrigido de 'rigth' */
     padding-bottom: 20px;
-    margin: o auto;
+    margin: 0 auto; /* Corrigido de 'o' para zero */
 }
 
-.box H1 {
+.box h1 {
     font-size: 18px;
 }
 
@@ -30,19 +30,18 @@ body {
 }
 
 hr {
-    width: 100%; /* Preenche o espaço todo */
-    height: 5px; /* Aumenta a espessura da linha */
-    background-color: black; /* Define a cor da linha */
-    border: none; /* Remove a borda padrão */
+    width: 100%; 
+    height: 5px; 
+    background-color: black; 
+    border: none; 
 }
-h1 {
-    font-size: 18px;
 
-}
-cabeçalho {
-    width: 100%;      /* Cubra toda a largura da página */
-    height: 30px;     /* Altura fixa */
-    background-color: rgb(244, 247, 156); /* Cor de fundo (ex: azul) */ 
+/* Se for uma tag <header> no HTML, use header. 
+   Se for <div class="cabeçalho">, use .cabeçalho */
+.cabeçalho {
+    width: 100%;      
+    height: 30px;     
+    background-color: rgb(244, 247, 156); 
 }
 </style>
 </head>
